@@ -1,0 +1,45 @@
+/*.main{
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    transition: 1s;
+}
+.dark{
+    background-color: #f5f5f5;
+    color: black;
+}
+.light{
+    background-color: #1e1e1e;
+    color: white;
+}
+.card{
+    margin-top: 25px;
+    padding: 25px;
+}
+.dark.card{
+    background: #333;
+}
+img{
+    width: 250px;
+    border-radius: 13px;
+}
+.like-section{
+    margin-top: 15px;
+    cursor: grab;
+}
+button{
+    color:aliceblue;
+    background-color: #333;
+    width:200px;
+    margin-top: 15px;
+    padding:10px;
+    font-size: 25px;
+    cursor:pointer;
+}
+button:hover{
+    color:black;
+    background-color: white;
+}
+h1{
+    color: red;
+}*/

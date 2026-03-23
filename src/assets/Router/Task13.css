@@ -1,0 +1,27 @@
+/**{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: orange;
+    color:purple;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color:red;
+    background-color: greenyellow;
+}
+p{
+    font-size: 25px;
+    color:aqua;
+    text-align: start;
+    padding:5px;
+}
+ul{
+    text-align: start;
+    font-size: 26px;
+    padding:5px;
+    font-size: 25px;
+}*/
