@@ -31,7 +31,7 @@ export default function Task7() {
       <div className='image-box'>
         <input type="file" ref={imgRef} hidden onChange={handleImage}/>
         {pic ? (
-             <div className='image-box'onClick={()=> imgRef.current.click()}>
+             <div className='img-box'onClick={()=> imgRef.current.click()}>
                 Upload Image </div>
         ) : (
             <img onClick={()=> imgRef.current.click()}  className="org-img" src={imgURL} alt="preview" />

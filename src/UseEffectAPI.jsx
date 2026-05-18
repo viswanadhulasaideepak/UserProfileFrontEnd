@@ -23,7 +23,8 @@ export default function UseEffectAPI() {
                 <li>Name   : {user.name}</li> 
                 <li>Email  : {user.email}</li>    
                 <li>Phone  : {user.phone}</li>  
-                <li>Company: {user.website}</li><br></br></li>
+                <li>Company: {user.website}</li><br></br>
+            </li>
             ))}
         </ul>
       )}

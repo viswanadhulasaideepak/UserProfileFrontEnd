@@ -1,39 +1,94 @@
-import React from 'react'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import Menu from './FinalComponents/Menu'
-import Home from './FinalComponents/Home'
-import About from './FinalComponents/About'
-import Contact from './FinalComponents/Contact'
-import { CartProvider } from './assets/Context/ContextCart'
-import Cart from './assets/Context/Cart'
-import FoodDetails from './FinalComponents/FoodDetails'
-import './index.css'
+import React, { useState } from "react";
+import UserProfileAPI from "./assets/Components/UserProfile/UserProfileAPI";
 
-//Import
+
 export default function App() {
-  //Functionality
+  const [userId, setUserId] = useState(1);
+
+  const pageStyle = {
+    textAlign: "center",
+    backgroundColor: "#f4f4f4",
+    minHeight: "100vh",
+    padding: "20px",
+    fontFamily: "Arial"
+  };
+
+  const headingStyle = {
+    color: "#333",
+    marginBottom: "20px"
+  };
+
+  const buttonContainer = {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    marginBottom: "30px"
+  };
+
+  const buttonStyle = {
+    backgroundColor: "#007bff",
+    color: "white",
+    border: "none",
+    padding: "10px 18px",
+    borderRadius: "8px",
+    cursor: "pointer",
+    fontSize: "14px"
+  };
+
   return (
-    <div>
-      <CartProvider> 
-        <BrowserRouter>
-      <div className='main'>
-        <Link to={'/Home'}>Home</Link>
-        <Link to={'/About'}>About</Link>
-        <Link to={'/Menu'}>Menu</Link>
-        <Link to={'/Contact'}>Contact</Link>
-        <Link to={'/Cart'}>Cart</Link>
+    <div style={pageStyle}>
+
+      <h1 style={headingStyle}>
+        User Profile Dashboard
+      </h1>
+
+      <div style={buttonContainer}>
+
+        <button style={buttonStyle} onClick={() => setUserId(1)}>
+          User 1
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(2)}>
+          User 2
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(3)}>
+          User 3
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(4)}>
+          User 4
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(5)}>
+          User 5
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(6)}>
+          User 6
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(7)}>
+          User 7
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(8)}>
+          User 8
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(9)}>
+          User 9
+        </button>
+
+        <button style={buttonStyle} onClick={() => setUserId(10)}>
+          User 10
+        </button>
+
       </div>
-        <Routes>
-          <Route path='/Home' element={<Home />} />
-          <Route path='/About' element={<About/>}/>
-          <Route path='/Menu' element={<Menu />} />
-          <Route path=":id" element={<FoodDetails />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/Cart' element={<Cart />}/>
-        </Routes>
-      </BrowserRouter>
-      </CartProvider>
-      
+
+      <UserProfileAPI userId={userId} />
+
     </div>
-  )
+  );
 }
