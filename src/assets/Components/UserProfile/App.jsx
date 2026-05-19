@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import UserProfileAPI from "./assets/Components/UserProfile/UserProfileAPI";
 
-
 export default function App() {
   const [userId, setUserId] = useState(1);
 
