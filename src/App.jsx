@@ -171,6 +171,8 @@ const filteredUsers = users.filter((user) =>
       {/* Search + Add */}
 
       <div className="top-section">
+        <input type="text" placeholder="Search User"
+         value={search} onChange={(e) => setSearch(e.target.value)} />
 
   <input type="text" placeholder="Name" value={newUser.name}
     onChange={(e) =>
